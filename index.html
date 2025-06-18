@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Front end</title>
+    <link rel="stylesheet" href="styles/style-imoveis.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/entre-em-contato.css">
+    <link rel="stylesheet" href="styles/cadastre-corretor.css">
+    <link rel="stylesheet" href="styles/formulario-contato.css">
+    <link rel="stylesheet" href="styles/simulador-financiamento.css">
+    <link rel="stylesheet" href="styles/sobre-nos.css">
+    <link rel="stylesheet" href="styles/contatos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/hamburger-nav.js" defer></script>
+    <script src="scripts/financiamento.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- INICIO NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html"><img id="img-logo" src="img/logo.jpg" alt="logo"></a>
+
+        <button class="btn-hamb">
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+        </button>
+
+        <div class="nav-links">
+            <ul id="ul-nav-links">
+                <li><a id="btn-venda-nav" href="#venda">Comprar</a></li>
+                <li><a id="btn-aluga-nav" href="#imoveis-locacao">Alugar</a></li>
+                <li><a id="btn-cadimovel-nav" href="">Cadastrar imóvel</a></li>
+                <li><a id="btn-corretor-nav" href="">Seja um corretor</a></li>
+                <li><a id="btn-financiamento-nav" href="#financiamento">Simulador de financiamento</a></li>
+                <li><a id="btn-sobre-nav" href="#sobre-nos">Sobre nós</a></li>
+                <li><a id="btn-contatos-nav" href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+    <!-- INICIO SLIDER -->
+    <div class="slider">
+        <div class="imagem">
+            <img id="slider-img" src="/img/imovel-livre-de-burocraciaa.png">
+        </div>
+    </div>
+    <!-- FIM SLIDER -->
+
+    <!-- INICIO - IMOVEIS VENDA -->
+    <h2 class="h2-imoveis" id="venda">VENDA</h2>
+
+    <div class="container-principal"> <!-- INICIO CONTAINER PRINCIPAL-->
+        <a href="imoveis/venda1.html" class="container"> <!-- INICIO CARD-IMOVEL-->
+            <img class="img-principal-card" src="img/imoveis/casa1/frente-casa1.jpg" alt="">
+
+            <div class="descricao">
+                <p class="tipo-imovel">Casa</p>
+                <p class="endereco">Av Rouxinol n<sup id="numero-0">o</sup> 354</p>
+            </div>
+            
+            <p class="cod-imovel">CA1564</p>
+
+            <div class="infos">
+                <div class="card-info">
+                    <img class="img-info" src="img/cama.png" alt="">
+                    <p class="num-info">3</p>
+                </div>
+                <div class="card-info">
+                    <img class="img-info" src="img/chuveiro.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+                <div class="card-info">
+                    <img class="img-info" src="img/carro.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+                <div class="card-info">
+                    <img class="img-info" src="img/metro2.png" alt="">
+                    <p class="num-info">170m<sup>2</sup></p>
+                </div>
+            </div>
+            
+            <div class="valores">
+                <h2 class="valor">R$780.000,00</h2>
+                <p id="valor-cond">Cond: R$ 0,00</p>
+            </div>  
+        </a> <!--FIM CARD-IMOVEL-->
+
+        <a href="imoveis/venda2.html" class="container"> <!-- INICIO - CARD-IMOVEL -->
+            <img class="img-principal-card" src="img/imoveis/sala-comercial-1/sala.jpg" alt="">
+
+            <div class="descricao">
+                <p class="tipo-imovel">Sala Comercial</p>
+                <p class="endereco">Av Paulo Faccini n<sup id="numero-0">o</sup> 459</p>
+            </div>
+
+            <p class="cod-imovel">SA9884</p>
+
+            <div class="infos">
+                <div class="card-info">
+                    <img class="img-info" src="img/cama.png" alt="">
+                    <p class="num-info">1</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/chuveiro.png" alt="">
+                    <p class="num-info">1</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/carro.png" alt="">
+                    <p class="num-info">1</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/metro2.png" alt="">
+                    <p class="num-info">45m<sup>2</sup></p>
+                </div>
+
+            </div>
+
+            <div class="valores">
+                <h2 class="valor">R$495.000,00</h2>
+                <p id="valor-cond">Cond: R$ 420,00</p>
+            </div>
+        </a> <!--FIM CARD-IMOVEL-->
+        
+        <a href="imoveis/venda3.html" class="container"> <!-- INICIO CARD-IMOVEL -->
+            <img class="img-principal-card" src="img/imoveis/ap1/sala-ap.jpg" alt="">
+
+            <div class="descricao">
+                <p class="tipo-imovel">Apartamento</p>
+                <p class="endereco">Av. Salgado filho n<sup id="numero-0">o</sup>1992</p>
+            </div>
+
+            <p class="cod-imovel">AP5729</p>
+
+            <div class="infos">
+                <div class="card-info">
+                    <img class="img-info" src="img/cama.png" alt="">
+                    <p class="num-info">3</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/chuveiro.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/carro.png" alt="">
+                    <p class="num-info">1</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/metro2.png" alt="">
+                    <p class="num-info">95m<sup>2</sup></p>
+                </div>
+            </div>
+
+            <div class="valores">
+                <h2 class="valor">R$630.000,00</h2>
+                <p id="valor-cond">Cond: R$ 370,00</p>
+            </div>
+        </a> <!-- FIM - CARD-IMOVEL -->
+    </div> <!-- FIM CONTAINER PRINCIPAL-->
+    <!-- FIM - IMOVEIS VENDA -->
+
+        <!-- INICIO - IMOVEIS lOCAÇÃO -->
+    <h2 class="h2-imoveis" id="imoveis-locacao">LOCAÇÃO</h2>
+
+    <div class="container-principal"> <!-- INICIO CONTAINER PRINCIPAL-->
+        <a href="imoveis/locacao1.html" class="container"> <!-- INICIO CARD-IMOVEL-->
+            <img class="img-principal-card" src="img/imoveis/ap2/sala-ap2.jpg" alt="">
+
+            <div class="descricao">
+                <p class="tipo-imovel">Apartamento</p>
+                <p class="endereco">Rua Brasília n<sup id="numero-0">o</sup> 1430</p>
+            </div>
+            
+            <p class="cod-imovel">AP2284</p>
+
+            <div class="infos">
+                <div class="card-info">
+                    <img class="img-info" src="img/cama.png" alt="">
+                    <p class="num-info">3</p>
+                </div>
+                <div class="card-info">
+                    <img class="img-info" src="img/chuveiro.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+                <div class="card-info">
+                    <img class="img-info" src="img/carro.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+                <div class="card-info">
+                    <img class="img-info" src="img/metro2.png" alt="">
+                    <p class="num-info">140m<sup>2</sup></p>
+                </div>
+            </div>
+            
+            <div class="valores">
+                <h2 class="valor">R$5.200,00</h2>
+                <p id="valor-cond">Cond: R$ 620,00</p>
+            </div>  
+        </a> <!--FIM CARD-IMOVEL-->
+
+        <a  href="imoveis/locacao2.html" class="container"> <!-- INICIO - CARD-IMOVEL -->
+            <img class="img-principal-card" src="img/imoveis/galpao/galpao-frente.jpg" alt="">
+
+            <div class="descricao">
+                <p class="tipo-imovel">Galpão</p>
+                <p class="endereco">Rua Jonas Guimarães n<sup id="numero-0">o</sup> 742</p>
+            </div>
+
+            <p class="cod-imovel">GA8573</p>
+
+            <div class="infos">
+                <div class="card-info">
+                    <img class="img-info" src="img/cama.png" alt="">
+                    <p class="num-info">8</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/chuveiro.png" alt="">
+                    <p class="num-info">5</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/carro.png" alt="">
+                    <p class="num-info">15</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/metro2.png" alt="">
+                    <p class="num-info">2320m<sup>2</sup></p>
+                </div>
+
+            </div>
+
+            <div class="valores">
+                <h2 class="valor">R$65.000,00</h2>
+                <p id="valor-cond">Cond: R$ 0,00</p>
+            </div>
+        </a> <!--FIM CARD-IMOVEL-->
+        
+        <a href="imoveis/locacao3.html" class="container"> <!-- INICIO CARD-IMOVEL -->
+            <img class="img-principal-card" src="img/imoveis/ap3/cozinha-ap3.jpg" alt="">
+
+            <div class="descricao">
+                <p class="tipo-imovel">Apartamento</p>
+                <p class="endereco">Av. Guarulhos n<sup id="numero-0">o</sup>197</p>
+            </div>
+
+            <p class="cod-imovel">AP9847</p>
+
+            <div class="infos">
+                <div class="card-info">
+                    <img class="img-info" src="img/cama.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/chuveiro.png" alt="">
+                    <p class="num-info">2</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/carro.png" alt="">
+                    <p class="num-info">1</p>
+                </div>
+
+                <div class="card-info">
+                    <img class="img-info" src="img/metro2.png" alt="">
+                    <p class="num-info">78m<sup>2</sup></p>
+                </div>
+            </div>
+
+            <div class="valores">
+                <h2 class="valor">R$3.100,00</h2>
+                <p id="valor-cond">Cond: R$ 405,70</p>
+            </div>
+        </a> <!-- FIM - CARD-IMOVEL -->
+    </div> <!-- FIM CONTAINER PRINCIPAL-->
+    <!-- FIM - IMOVEIS LOCAÇÃO -->
+
+    <!-- INICIO FORMULARIO ENTRE EM CONTATO -->
+    <form class="form-container" method="get">
+        <h2>Fique por dentro das oportunidades</h2>
+
+        <div class="caixas-form">
+            <label for="nome">
+                <img src="img/profile.png" alt=""">
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+            </label>
+            <label for="email">
+                <img src="img/email.png" alt=""">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+            </label>
+            <label for="contato">
+                <img src="img/mobile.png" alt=""">
+                <input type="tel" id="contato" name="contato" placeholder="Contato">
+            </label>
+        </div>
+        
+        <div class="botoes">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+    <!-- FIM FORMULARIO ENTRE EM CONTATO -->    
+
+
+    <!-- INICIO FORMULARIOS -->
+    <div class="forms">
+        <a class="cadastre-imovel"><img  id="cadastre-imovel-img" src="img/cadastre-seu-imovel.png" alt="cadastre-seu-imovel"></a>
+        <a class="cadastre-imovel"><img  id="seja-um-corretor" src="img/seja-um-corretor.png" alt="seja-um-corretor"></a>
+    </div>
+    <!-- FIM FORMULARIOS -->
+    
+
+    <!-- INICIO BOTAO-WHATSAPP -->
+        <a href=""><img id="whatsapp"src="img/whatsapp.png"alt=""></a>
+    <!-- FIM BOTAO-WHATSAPP -->
+
+    <!-- INICIO SIMULADOR DE FINANCIAMENTO -->
+    <div class="container-financiamento" id="financiamento">
+        <h2>Simulador de financiamento</h2>
+        <form method="get" class="formulario-financiamento">
+            <div class="cards-financiamento">
+                <label for="valor-imovel-preencher">
+                    <input type="text" placeholder="Valor do imóvel R$: " name="valor-imovel-preencher" id="valor-imovel-preencher">
+                </label>
+
+                <label for="entrada-preencher">
+                    <input type="text" placeholder="Entrada R$: " name="entrada-preencher" id="entrada-preencher">
+                </label>
+
+                <label for="quantidade-parcelas">
+                    <select  name="quantidade-parcelas" id="quantidade-parcelas" required>
+                        <option value="">Selecione o prazo</option>
+                        <option value="36">36 meses (3 anos)</option>
+                        <option value="120">120 meses (10 anos)</option>
+                        <option value="240">240 meses (20 anos)</option>
+                        <option value="360">360 meses (30 anos)</option>
+                        <option value="420">420 meses (35 anos)</option>
+                    </select>
+                </label>
+            </div>
+                
+            <div class="botoes-financiamento">
+                    <button type="button" id="btn-finan">Simular</button>
+                    <button type="reset">Limpar</button>
+            </div>     
+        </form>
+
+        <div class="resultado-financiamento">
+            <div class="info-finan">
+                <h3 class="subtitulo-resultado">Valor do imóvel</h3>
+                <div class="valores-finan">
+                    <p id="valor-imovel"></p>
+                </div>
+            </div>
+
+            <div class="info-finan">
+                <h3 class="subtitulo-resultado">Quantidade de parcelas</h3>
+                <div class="valores-finan">
+                    <p class="valor-js-manipulavel" id="qtd-parcelas"></p>
+                </div>
+            </div>
+
+            <div class="info-finan">
+                <h3 class="subtitulo-resultado">Valor da parcela</h3>
+                <div class="valores-finan">
+                    <p class="valor-js-manipulavel" id="valor-parcelas"></p>
+                </div>
+            </div>
+
+            <div class="info-finan">
+                <h3 class="subtitulo-resultado">Valor total do imóvel financiado</h3>
+                <div class="valores-finan"> 
+                    <p class="valor-js-manipulavel" id="valor-total"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="sobre-nos">SOBRE NÓS</h2>
+
+    <div class="container-sobre-nos">
+        <h3>Localização</h3>
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.599579273547!2d-46.539966324894856!3d-23.43882757888412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef51fbe5f8681%3A0x1f8cf929993dc97!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%20IFSP%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1750090091243!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3 id="historia">Nossa história</h3>
+        <p id="texto">Há mais de uma década no mercado, somos a imobiliária referência em Guarulhos e região. Com a experiência de quem entende do assunto, garantimos a você o melhor negócio para comprar, vender ou alugar seu imóvel. Conte com nossa expertise e segurança para encontrar o que você procura!</p>
+
+        <h3 id="sede-texto">Sede da empresa</h3>
+        <img id="sede-imagem" src="img/foto-sede.jpg" alt="imagem-sede-imobiliaria">
+    </div>
+
+    <h2 id="contatos">CONTATOS</h2>
+
+    <div class="container-contatos">
+        <div class="card-contato">
+            <img src="img/email.png" alt="">
+            <p>imobiliaria@imob.com</p>
+        </div>
+
+        <div class="card-contato">
+            <img src="img/instagram.png" alt="">
+            <p>@realstate</p>
+        </div>
+
+        <div class="card-contato">
+            <img src="img/mobile.png" alt="">
+            <p>2456-4381</p>
+        </div>
+    </div>
+    
+    
+    <footer>
+        Projeto final da disciplina de Desenvolvimento Front-end
+    </footer>
+
+
+</body>
+</html>
